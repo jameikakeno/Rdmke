@@ -3,25 +3,6 @@ Tamam kardeşim, README dosyasını çektiğin resimlere göre düzenliyorum. İ
 ```markdown
 # 🔍 Keneviz - UserName Search Tool
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-1.1.3-brightgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
-</p>
-
-<p align="center">
-  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12091.jpg" width="65%">
-</p>
-
-## 📌 İçindekiler
-- [Hakkında](#-hakkında)
-- [Özellikler](#-özellikler)
-- [Kurulum](#-kurulum)
-- [Desteklenen Platformlar](#-desteklenen-platformlar)
-- [Geliştirici](#-geliştirici)
-- [Lisans](#-lisans)
-
 ---
 
 ## 🎯 Hakkında
@@ -46,11 +27,11 @@ Tamam kardeşim, README dosyasını çektiğin resimlere göre düzenliyorum. İ
 
 ---
 
-## 📦 Kurulum
+```
 
-### 🔧 Termux / Linux
+🔧 Termux / Linux
 
-```bash
+```Kurulum
 # Gerekli paketleri yükle
 pkg update && pkg upgrade -y
 pkg install python git -y
@@ -63,15 +44,6 @@ cd Rdmke
 pip install requests beautifulsoup4
 
 # Çalıştır
-python search.py
-```
-
-🪟 Windows
-
-```cmd
-git clone https://github.com/jameikakeno/Rdmke.git
-cd Rdmke
-pip install requests beautifulsoup4
 python search.py
 ```
 
@@ -97,12 +69,6 @@ Program başladığında sizden kullanıcı adını isteyecektir:
 ...
 [+] Bulunan: 26 site
 ```
-
-Örnek Çıktı
-
-<p align="center">
-  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="85%">
-</p>
 
 Sonuçlar
 
