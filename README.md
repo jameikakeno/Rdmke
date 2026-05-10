@@ -1,27 +1,6 @@
 ```markdown
 # 🔍 Keneviz - UserName Search Tool
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-1.1.3-brightgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
-</p>
-
-<p align="center">
-  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12091.jpg" width="65%">
-</p>
-
-## 📌 İçindekiler
-- [Hakkında](#-hakkında)
-- [Özellikler](#-özellikler)
-- [Kurulum](#-kurulum)
-- [Kullanım](#-kullanım)
-- [Ekran Görüntüleri](#-ekran-görüntüleri)
-- [Desteklenen Platformlar](#-desteklenen-platformlar)
-- [Geliştirici](#-geliştirici)
-- [Lisans](#-lisans)
-
 ---
 
 ## 🎯 Hakkında
@@ -29,10 +8,6 @@
 **Keneviz**, bir kullanıcı adının 200'den fazla sosyal medya, e-ticaret, eğitim, oyun ve diğer platformlardaki varlığını tarayan güçlü bir **OSINT (Açık Kaynak İstihbarat)** aracıdır.
 
 > ⚡ **Hızlı**, **güvenilir** ve **kullanımı kolay** - Sadece bir kullanıcı adı girin, tüm platformlardaki izlerini keşfedin!
-
-<p align="center">
-  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="65%">
-</p>
 
 ---
 
@@ -53,8 +28,7 @@
 ## 📦 Kurulum
 
 ### 🔧 Termux / Linux
-
-```bash
+```
 # Gerekli paketleri yükle
 pkg update && pkg upgrade -y
 pkg install python git -y
@@ -72,7 +46,7 @@ python search.py
 
 🪟 Windows
 
-```cmd
+```
 git clone https://github.com/jameikakeno/Rdmke.git
 cd Rdmke
 pip install requests beautifulsoup4
@@ -85,7 +59,7 @@ python search.py
 
 Temel Kullanım
 
-```bash
+```
 python search.py
 ```
 
@@ -101,12 +75,6 @@ Program başladığında sizden kullanıcı adını isteyecektir:
 ...
 [+] Bulunan: 26 site
 ```
-
-Örnek Çıktı
-
-<p align="center">
-  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="85%">
-</p>
 
 Sonuçlar
 
@@ -177,13 +145,6 @@ data/
 
 ---
 
-🖥️ Ekran Görüntüleri
-
-Tarama Başlangıcı Tarama Sonucu
-<img src="https://github.com/jameikakeno/Rdmke/blob/main/12091.jpg" width="300"> <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="300">
-
----
-
 📱 Desteklenen Platformlar
 
 Platform Durum
@@ -201,13 +162,9 @@ Platform Durum
   <img src="https://img.shields.io/badge/Dev-Keneviz-red?style=for-the-badge">
 </p>
 
-Telegram: @KenevizOrjin
+Telegram: @KenevizPremiumTool
 
 ---
-
-⚖️ Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır.
 
 ```
 MIT License
@@ -234,29 +191,5 @@ Projeyi beğendiyseniz yıldız vermeyi unutmayın! ⭐
 ---
 
 Keneviz - Güçlü, Hızlı, Etkili 🔍
-
-```
-
----
-
-## 📝 README'ye Eklemen Gereken Resimler
-
-Resimlerin GitHub'da görünmesi için şu yapıyı oluştur:
-
-```bash
-Rdmke/
-├── search.py
-├── README.md
-├── 12090.jpg    # tarama sonuç resmi
-└── 12091.jpg    # tarama başlangıç resmi
-```
-
-Resimler zaten repo'ndaysa sorun yok. Değilse yükle:
-
-```bash
-git add 12090.jpg 12091.jpg
-git commit -m "Add screenshots"
-git push
-```
 
 Keneviz tarafından hazırlanmıştır. 🚀
