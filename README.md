@@ -1,1 +1,262 @@
-# Rdmke
+```markdown
+# 🔍 Keneviz - UserName Search Tool
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.1.3-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12091.jpg" width="65%">
+</p>
+
+## 📌 İçindekiler
+- [Hakkında](#-hakkında)
+- [Özellikler](#-özellikler)
+- [Kurulum](#-kurulum)
+- [Kullanım](#-kullanım)
+- [Ekran Görüntüleri](#-ekran-görüntüleri)
+- [Desteklenen Platformlar](#-desteklenen-platformlar)
+- [Geliştirici](#-geliştirici)
+- [Lisans](#-lisans)
+
+---
+
+## 🎯 Hakkında
+
+**Keneviz**, bir kullanıcı adının 200'den fazla sosyal medya, e-ticaret, eğitim, oyun ve diğer platformlardaki varlığını tarayan güçlü bir **OSINT (Açık Kaynak İstihbarat)** aracıdır.
+
+> ⚡ **Hızlı**, **güvenilir** ve **kullanımı kolay** - Sadece bir kullanıcı adı girin, tüm platformlardaki izlerini keşfedin!
+
+<p align="center">
+  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="65%">
+</p>
+
+---
+
+## ✨ Özellikler
+
+| Özellik | Açıklama |
+|---------|----------|
+| 🌐 **200+ Site** | Sosyal medya, e-ticaret, oyun, eğitim, blog ve daha fazlası |
+| 🚀 **Hızlı Tarama** | Çoklu thread desteği ile saniyeler içinde sonuç |
+| 📁 **Otomatik Kayıt** | Sonuçlar `data/username.txt` dosyasına kaydedilir |
+| 🎨 **Renkli Çıktı** | Bulunan siteler yeşil, bulunamayanlar kırmızı ile gösterilir |
+| 🔄 **Sonsuz Döngü** | Tarama bitince ENTER ile devam, manuel çıkış |
+| 🛡️ **SSL Hatasız** | Tüm SSL uyarıları kapatıldı, temiz çıktı |
+| 📱 **Termux Uyumlu** | Android'de sorunsuz çalışır |
+
+---
+
+## 📦 Kurulum
+
+### 🔧 Termux / Linux
+
+```bash
+# Gerekli paketleri yükle
+pkg update && pkg upgrade -y
+pkg install python git -y
+
+# Repoyu clone'la
+git clone https://github.com/jameikakeno/Rdmke.git
+cd Rdmke
+
+# Python kütüphanelerini yükle
+pip install requests beautifulsoup4
+
+# Çalıştır
+python search.py
+```
+
+🪟 Windows
+
+```cmd
+git clone https://github.com/jameikakeno/Rdmke.git
+cd Rdmke
+pip install requests beautifulsoup4
+python search.py
+```
+
+---
+
+🚀 Kullanım
+
+Temel Kullanım
+
+```bash
+python search.py
+```
+
+Program başladığında sizden kullanıcı adını isteyecektir:
+
+```
+[?] Kullanıcı adı: keneviz
+[*] keneviz taranıyor (201 site)
+
+[1] [+] Twitter
+[2] [+] Instagram
+[3] [+] GitHub
+...
+[+] Bulunan: 26 site
+```
+
+Örnek Çıktı
+
+<p align="center">
+  <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="85%">
+</p>
+
+Sonuçlar
+
+Tarama sonuçları otomatik olarak data/ klasörüne kaydedilir:
+
+```
+data/
+└── kullaniciadi.txt
+```
+
+---
+
+📸 Desteklenen Platformlar (201+ Site)
+
+<details>
+<summary><b>Sosyal Medya (30+ site)</b></summary>
+
+· Facebook, Twitter, Instagram, YouTube, Snapchat, TikTok, Reddit
+· Pinterest, Tumblr, LinkedIn, Telegram, Twitch, VK
+· Threads, Bluesky, Mastodon, WhatsApp, Discord, Signal
+· WeChat, QQ, SinaWeibo, Likee, Triller, Mewe
+· Parler, Gab, TruthSocial, Rumble, Odysee
+
+</details>
+
+<details>
+<summary><b>E-ticaret (15+ site)</b></summary>
+
+· eBay, Fiverr, Amazon, Etsy, AliExpress, Shopify
+· Wish, Mercari, Poshmark, Depop, Grailed, Reverb, Discogs
+
+</details>
+
+<details>
+<summary><b>Eğitim (12+ site)</b></summary>
+
+· Khan Academy, Coursera, Udemy, edX, Duolingo, Quizlet
+· Brilliant, Codecademy, FreeCodeCamp, SoloLearn, W3Schools
+
+</details>
+
+<details>
+<summary><b>Yazılım & Kariyer (25+ site)</b></summary>
+
+· GitHub, GitLab, Bitbucket, Stack Overflow, Medium, Dev.to
+· HackerRank, LeetCode, Coderbyte, Upwork, Freelancer
+· Topcoder, Codeforces, AtCoder, HackerEarth, CodinGame
+
+</details>
+
+<details>
+<summary><b>Oyun Platformları (15+ site)</b></summary>
+
+· Steam, Roblox, Epic Games, Xbox, PlayStation, Nintendo
+· Chess.com, Lichess, RuneScape, Minecraft, Kongregate
+
+</details>
+
+<details>
+<summary><b>Diğer Platformlar (100+ site)</b></summary>
+
+· Spotify, SoundCloud, Patreon, DeviantArt, Behance, Dribbble
+· Wikipedia, Quora, Wattpad, Pastebin, Linktree, Imgur
+· Tinder, Bumble, Hinge, OkCupid, POF (Dating)
+· Ve daha fazlası...
+
+</details>
+
+---
+
+🖥️ Ekran Görüntüleri
+
+Tarama Başlangıcı Tarama Sonucu
+<img src="https://github.com/jameikakeno/Rdmke/blob/main/12091.jpg" width="300"> <img src="https://github.com/jameikakeno/Rdmke/blob/main/12090.jpg" width="300">
+
+---
+
+📱 Desteklenen Platformlar
+
+Platform Durum
+✅ Termux (Android) Tam destek
+✅ Linux (Ubuntu/Debian) Tam destek
+✅ Windows (CMD/PowerShell) Tam destek
+✅ macOS Tam destek
+✅ Replit Tam destek
+
+---
+
+👨‍💻 Geliştirici
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Dev-Keneviz-red?style=for-the-badge">
+</p>
+
+Telegram: @KenevizOrjin
+
+---
+
+⚖️ Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır.
+
+```
+MIT License
+
+Copyright (c) 2024 Keneviz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+```
+
+---
+
+⭐ Destek
+
+Projeyi beğendiyseniz yıldız vermeyi unutmayın! ⭐
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/jameikakeno/Rdmke?style=social">
+  <img src="https://img.shields.io/github/forks/jameikakeno/Rdmke?style=social">
+  <img src="https://img.shields.io/github/watchers/jameikakeno/Rdmke?style=social">
+</p>
+
+---
+
+Keneviz - Güçlü, Hızlı, Etkili 🔍
+
+```
+
+---
+
+## 📝 README'ye Eklemen Gereken Resimler
+
+Resimlerin GitHub'da görünmesi için şu yapıyı oluştur:
+
+```bash
+Rdmke/
+├── search.py
+├── README.md
+├── 12090.jpg    # tarama sonuç resmi
+└── 12091.jpg    # tarama başlangıç resmi
+```
+
+Resimler zaten repo'ndaysa sorun yok. Değilse yükle:
+
+```bash
+git add 12090.jpg 12091.jpg
+git commit -m "Add screenshots"
+git push
+```
+
+Keneviz tarafından hazırlanmıştır. 🚀
