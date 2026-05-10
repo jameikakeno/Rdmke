@@ -1,4 +1,3 @@
-Tamam kardeşim, README dosyasını çektiğin resimlere göre düzenliyorum. İşte hatasız, güzel görünümlü README.md:
 
 ```markdown
 # 🔍 Keneviz - UserName Search Tool
